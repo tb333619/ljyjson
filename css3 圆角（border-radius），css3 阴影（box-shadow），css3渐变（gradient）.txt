@@ -1,0 +1,92 @@
+前缀
+
+-moz(例如 -moz-border-radius)用于Firefox。
+
+-webkit(例如：-webkit-border-radius)用于Safari和Chrome。
+
+css3圆角代码
+
+.radius {
+
+padding:10px; width:300px; height:50px;
+
+border: 5px solid #dedede;
+
+-moz-border-radius: 15px;      /* Gecko browsers */
+
+-webkit-border-radius: 15px;  /* Webkit browsers */
+
+border-radius:15px;            /* W3C syntax */
+
+}
+
+效果：
+
+
+其他写法：
+
+border-radius:5px 15px 20px 25px;              上  右    下  左css3阴影：
+
+语法：
+
+外阴影：box-shadow:X Y Npx #color;
+
+内阴影：box-shadow:inset X Y Npx #color;
+
+文字阴影：text-shadow：X Y Npx #color;
+
+第一个属性：阴影的X轴(可以使用负值)
+
+第二个属性：阴影的Y轴(可以使用负值)
+
+第三个属性：阴影的像素（大小）
+
+第四个属性：阴影的颜色
+
+inset是设置内阴影
+
+写法：
+
+
+.shadow
+
+{
+
+width:300px;
+
+height:50px;
+
+box-shadow:0px 0px 8px #f00;
+
+}
+
+效果：
+
+
+
+css3渐变
+
+线性渐变 – 从上到下
+
+渐变代码：
+
+
+.gradient
+
+{
+
+width:300px;
+
+height:50px;
+
+background: linear-gradient(top, #ff911b, #000);
+
+background: -webkit-linear-gradient(top, #ff911b, #000);
+
+background: -o-linear-gradient(top, #ff911b, #000);
+
+background: -ms-linear-gradient(top, #ff911b, #000);
+
+background: -moz-linear-gradient(top, #ff911b 0, #000 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=’#ff911b’, endColorstr=’#000′, GradientType=0);/*ie6滤镜*/
