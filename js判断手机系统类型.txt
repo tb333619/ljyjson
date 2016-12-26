@@ -1,0 +1,14 @@
+isPhoneType:function(){
+var u = navigator.userAgent;
+var phoneType=”;
+if (u.indexOf(‘Android’) > -1 || u.indexOf(‘Linux’) > -1) {//安卓手机
+phoneType= “安卓手机”;
+} else if (u.indexOf(‘iPhone’) > -1) {//苹果手机
+phoneType= “苹果手机”;
+} else if (u.indexOf(‘Windows Phone’) > -1) {//winphone手机
+phoneType= “winphone手机” ;
+}
+return phoneType;
+},
+
+console.log(isAI);//获取相对应的手机系统
