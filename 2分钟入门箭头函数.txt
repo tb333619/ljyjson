@@ -1,0 +1,37 @@
+箭头函数是ES6写函数的另外一种方法，不废话直接上对比
+
+ //ES5
+ var show = function(name, age){
+     return name + age;
+ }
+ //箭头函数
+ var show = (name,age) => {
+     return name + age;
+ }
+console.log(show('大彬哥','18'));
+ //点评：一句话，你会不会把function 换成 =>然后放到参数后面
+上第二个例子：
+
+var show = (name,age) => name + age;
+console.log(show('大彬哥',18));
+//点评：如果函数体里面一句话那么可以省略return 和 {}
+上第三个例子：
+
+var show = name => name;
+console.log(show('大彬哥'));
+//点评 如果一个参数可以省略括号
+上第四个例子：
+
+        function Person(){
+            this.name = name;
+        }
+        Person.prototype.showName = function(){
+            setTimeout(show=>alert(this.name),1000);
+        };
+      var p1 =  new Person('大彬哥');
+        p1.showName();
+ //点评：以前对象里面套事件和定时器this是window,这么写没问题了，是对象，不需要费事外层存this了
+
+文／大彬哥（简书作者）
+原文链接：http://www.jianshu.com/p/34def3a4c72c
+著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
